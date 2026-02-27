@@ -1,71 +1,126 @@
-🏙️ Municipal Community Complaint System
+<h1 align="center">🏙️ Municipal Community Complaint System</h1>
 
-A full-stack web application that allows citizens to register complaints related to municipal services such as sanitation, roads, water supply, street lights, and more. The system enables efficient complaint tracking, communication between citizens and authorities, and transparent issue resolution.
+<p align="center">
+  <b>A Full-Stack Web Platform for Smart Municipal Issue Management</b><br>
+  Built using PHP, MySQL, HTML, CSS & JavaScript
+</p>
 
-📌 Project Overview
+<p align="center">
+  <a href="https://municipal-complaint.wuaze.com">
+    <img src="https://img.shields.io/badge/🚀 Live Demo-Visit Now-success?style=for-the-badge">
+  </a>
+</p>
 
-The Municipal Community Complaint System is designed to digitize the process of reporting and managing community issues.
+<p align="center">
+  <img src="https://img.shields.io/badge/PHP-Backend-777BB4?style=for-the-badge&logo=php">
+  <img src="https://img.shields.io/badge/MySQL-Database-4479A1?style=for-the-badge&logo=mysql">
+  <img src="https://img.shields.io/badge/HTML5-Markup-E34F26?style=for-the-badge&logo=html5">
+  <img src="https://img.shields.io/badge/CSS3-Styling-1572B6?style=for-the-badge&logo=css3">
+  <img src="https://img.shields.io/badge/JavaScript-Frontend-F7DF1E?style=for-the-badge&logo=javascript">
+  <img src="https://img.shields.io/badge/Server-Apache-orange?style=for-the-badge">
+  <img src="https://img.shields.io/badge/License-Educational-blue?style=for-the-badge">
+</p>
 
-Citizens can submit complaints online, track their status, and receive updates, while administrators can manage complaints, assign departments, and monitor resolutions through a dedicated dashboard.
+---
 
-🚀 Features
-👤 User Features
+## 📌 Project Overview
 
-✅ User Registration & Login
-✅ Submit complaints with category & description
-✅ Upload images (optional)
-✅ Track complaint status (Pending / In Progress / Resolved)
-✅ Add comments on complaints
-✅ Receive notifications/updates
-✅ Provide feedback after resolution
+The **Municipal Community Complaint System** is a web-based civic engagement platform that enables citizens to report and track municipal issues digitally.
 
-🛠️ Admin Features
+It ensures transparency, faster issue resolution, and effective communication between citizens and local authorities.
 
-✅ Admin dashboard
-✅ View all complaints
-✅ Update complaint status
-✅ Assign departments
-✅ Manage users
-✅ View feedback and reports
-✅ Send notifications
+> 💡 This system modernizes traditional complaint handling by bringing municipal services into the digital ecosystem.
 
-🏗️ Tech Stack
+---
 
-Frontend:
+## 🌐 Live Application
 
-HTML5
+🔗 Access the deployed system here:  
+**https://municipal-complaint.wuaze.com**
 
-CSS3
+---
 
-JavaScript
+## ✨ Core Features
 
-Backend:
+### 👤 Citizen Panel
 
-PHP
+- Secure Registration & Login  
+- Submit complaints with category & description  
+- Upload complaint images (optional)  
+- Track complaint status (Pending / In Progress / Resolved)  
+- Add comments to complaints  
+- Receive system notifications  
+- Provide feedback after resolution  
 
-Database:
+---
 
-MySQL
+### 🛠️ Admin Panel
 
-Server:
+- Admin Dashboard  
+- View & Manage All Complaints  
+- Update Complaint Status  
+- Assign Departments  
+- Manage Users  
+- Monitor Feedback & Reports  
+- Send Notifications  
 
-Apache (XAMPP / WAMP / Hosting)
+---
 
-🗂️ Database Schema
+## 🎨 UI & Styling Approach
 
-The system includes the following main tables:
+The system follows a clean and structured interface design:
 
-users → Stores user information
+- Responsive Layout Design  
+- Dashboard-Based UI Structure  
+- Category-Based Complaint Forms  
+- Card-Based Complaint Display  
+- Smooth Hover Effects  
+- Modern Typography & Color Scheme  
+- Organized Admin Panel  
 
-complaints → Stores complaint details
+### CSS Techniques Used
 
-comments → Stores comments on complaints
+- Flexbox for alignment  
+- Grid layout for dashboard  
+- Media queries for responsiveness  
+- Hover transitions for interactivity  
+- Box-shadow & border-radius for modern UI  
 
-feedback → Stores user feedback
+---
 
-notifications → Stores notifications
+## 🏗️ System Architecture
 
-📂 Project Structure
+```
+Citizen (Browser)
+        ↓
+Frontend (HTML + CSS + JavaScript)
+        ↓
+Backend (PHP)
+        ↓
+MySQL Database
+        ↓
+Admin Dashboard (Complaint Management)
+```
+
+---
+
+## 🗂️ Database Structure
+
+### Main Tables
+
+| Table Name     | Description |
+|---------------|------------|
+| users | Stores citizen & admin information |
+| complaints | Stores complaint details |
+| comments | Stores discussion/comments |
+| feedback | Stores resolution feedback |
+| notifications | Stores system notifications |
+
+---
+
+## 📂 Project Structure
+
+```
 municipal-complaint-system/
 │
 ├── index.php
@@ -73,6 +128,7 @@ municipal-complaint-system/
 ├── register.php
 ├── dashboard.php
 ├── submit_complaint.php
+│
 ├── admin/
 │   ├── admin_dashboard.php
 │   ├── manage_complaints.php
@@ -80,88 +136,115 @@ municipal-complaint-system/
 ├── css/
 ├── js/
 ├── images/
+│
 ├── database.sql
 └── README.md
+```
 
-⚙️ Installation Guide
-1️⃣ Clone the Repository
+---
+
+## ⚙️ Installation Guide
+
+### 1️⃣ Clone Repository
+
+```bash
 git clone https://github.com/yourusername/municipal-complaint-system.git
+```
 
-2️⃣ Move Project Folder
+---
+
+### 2️⃣ Move Project Folder
 
 Move the folder to:
 
-htdocs (XAMPP) OR www (WAMP)
+- `htdocs` (XAMPP)  
+OR  
+- `www` (WAMP)
 
-3️⃣ Create Database
+---
 
-Open phpMyAdmin
+### 3️⃣ Create Database
 
-Create database:
+- Open phpMyAdmin  
+- Create database named:
 
+```
 community_complaints
+```
 
+- Import `database.sql`
 
-Import database.sql
+---
 
-4️⃣ Configure Database Connection
+### 4️⃣ Configure Database Connection
 
-Update db.php file:
+Update `db.php` file:
 
+```php
 $host = "localhost";
 $user = "root";
 $password = "";
 $database = "community_complaints";
+```
 
-5️⃣ Run the Project
+---
+
+### 5️⃣ Run the Project
 
 Open browser:
 
+```
 http://localhost/municipal-complaint-system
+```
 
-📊 System Workflow
+---
 
-1️⃣ User registers/login
-2️⃣ User submits complaint
-3️⃣ Admin reviews complaint
-4️⃣ Status updated
-5️⃣ User receives notification
-6️⃣ Complaint resolved
-7️⃣ User provides feedback
+## 🔄 System Workflow
 
-🔐 Security Features
+1. Citizen registers or logs in  
+2. Citizen submits complaint  
+3. Admin reviews complaint  
+4. Admin updates status  
+5. Citizen receives notification  
+6. Complaint resolved  
+7. Citizen provides feedback  
 
-✅ Session authentication
-✅ Input validation
-✅ Password hashing
-✅ Secure database queries
+---
 
-🎯 Future Enhancements
+## 🔐 Security Features
 
-⭐ Email notifications
-⭐ SMS alerts
-⭐ Complaint priority levels
-⭐ Mobile app integration
-⭐ Analytics dashboard
-⭐ Geo-location tracking
+- Session-Based Authentication  
+- Password Hashing  
+- Input Validation & Sanitization  
+- Secure Database Queries  
+- Controlled Admin Access  
 
-👨‍💻 Author
+---
 
-Chiranjeevi Bathula
-BTech Computer Science Student
+## 🎯 Future Enhancements
 
-📜 License
+- Email Notifications  
+- SMS Alerts  
+- Complaint Priority Levels  
+- Geo-Location Tracking  
+- Analytics Dashboard  
+- Mobile App Integration  
 
-This project is for educational purposes.
+---
 
-🤝 Contribution
+## 👨‍💻 Author
 
-Contributions are welcome!
+**Chiranjeevi Bathula**  
+BTech Computer Science Engineering Student  
 
-Fork the repo
+---
 
-Create a new branch
+## 📜 License
 
-Commit changes
+This project is developed for educational purposes.
 
-Submit pull request
+---
+
+## ⭐ Support
+
+If you like this project, consider giving it a ⭐ on GitHub!

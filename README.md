@@ -6,7 +6,7 @@
 </p>
 
 <p align="center">
-  <a href="https://municipal-complaint.wuaze.com">
+  <a href="https://municipalcommunitycomplaint.free.nf">
     <img src="https://img.shields.io/badge/🚀 Live Demo-Visit Now-success?style=for-the-badge">
   </a>
 </p>
@@ -36,7 +36,7 @@ It ensures transparency, faster issue resolution, and effective communication be
 ## 🌐 Live Application
 
 🔗 Access the deployed system here:  
-**https://municipal-complaint.wuaze.com**
+**https://municipalcommunitycomplaint.free.nf**
 
 ---
 
